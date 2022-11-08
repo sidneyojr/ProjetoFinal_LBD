@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Cadastro de Vendedores</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <center>
+        <h1>Cadastrar Vendedores</h1>
+    <form method = "POST" action = "../php/cadastroVendedor.php">
+        <form method="POST" action="cadastro.php">
+            <label>Nome</label><input type="text" size="80" name="nome" id="nome"><br>
+            <label>Endereço</label><input type="text" size="200" name="endereco" id="endereco"><br>
+            <label>Cidade</label><input type="text" size="60" name="cidade" id="cidade">
+            <label>Estado</label>
+                                <select name="estado">
+                                    <option value="sp">SP</option>
+                                    <option value="rj">RJ</option>
+                                    <option value="mg">MG</option>
+                                </select><br>
+            <label>Telefone</label><input type="text" size="15" name="telefone" id="telefone"><br>
+            <label>Senha</label><input type="password" size="80" name="senha" minlength="8" maxlength="25" required><br>
+            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+	    <p> <input type="reset" name="LIMPAR"></p>
+
+    </form>
+    </center>
+
+    
+  </body>
+</html>
+

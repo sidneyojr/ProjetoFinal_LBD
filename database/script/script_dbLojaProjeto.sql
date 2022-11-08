@@ -38,6 +38,7 @@ CREATE TABLE tb_vendedor
   cidade VARCHAR(60) NOT NULL,
   estado VARCHAR(2) NOT NULL,
   telefone VARCHAR(15) NOT NULL,
+  senha VARCHAR(40) NOT NULL,
   porc_comissao NUMERIC(5,2)
  ) ENGINE = innodb;
 

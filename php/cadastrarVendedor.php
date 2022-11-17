@@ -5,7 +5,7 @@ $cidade = $_POST['cidade'];
 $estado= $_POST['estado'];
 $telefone = $_POST['telefone'];
 $comissao = $_POST['porcentagemComissao'];
-
+$estado = strtoupper($estado);
 include('conexaoBanco.php');
 
 $query = "INSERT INTO tb_vendedor(nome, endereco, cidade, estado, telefone, porc_comissao) 

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Vendedores</title>
-    <meta charset="utf-8">
   </head>
   <body>
     <center>
         <h1>Cadastrar Vendedores</h1>
-    <form method = "POST" action = "../php/cadastrarVendedor.php">
-        
+    <form method = "POST" action = "../php/cadastroVendedor.php">
+        <form method="POST" action="cadastro.php">
             <label>Nome</label><input type="text" size="80" name="nome" required ><br>
             <label>Endereço</label><input type="text" size="200" name="endereco" required ><br>
             <label>Cidade</label><input type="text" size="60" name="cidade" required >
             <label>Estado</label>
                                 <select name="estado">
-                                    <option value="SP">SP</option>
-                                    <option value="RJ">RJ</option>
-                                    <option value="MG">MG</option>
+                                    <option value="sp">SP</option>
+                                    <option value="rj">RJ</option>
+                                    <option value="mg">MG</option>
                                 </select><br>
             <label>Telefone</label><input type="text" size="15" name="telefone" required"><br>
             <label>Porcentagem de Comissão</label><input type="number" step="0.05" min="0" max="0.3" size="5" name="porcentagemComissao" required ><br>

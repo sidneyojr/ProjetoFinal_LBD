@@ -4,15 +4,16 @@
     <title>Cadastro de Categoria</title>
     <meta charset="utf-8">
   </head>
+  <link rel="stylesheet" href="../css/categoria.css">
   <body>
-    <center>
-        <h1>Cadastrar Categoria de Produto</h1>
-    <form method = "POST" action = "../php/cadastrarCategoria.php">
+    <div class="container">
+      <h1>Cadastrar Categoria de Produto</h1>
+      <form method = "POST" action = "../php/cadastrarCategoria.php">
         <label> Descrição: <input type="text" name="nome" size="60" maxlength="100" required> </label><br><br>
-        <p> <input type="submit" name="ENVIAR"></p><br>
-	    <p> <input type="reset" name="LIMPAR"></p>
-    </center>
-
-    
+        <input type="submit" class="buttons" name="ENVIAR"><br>
+        <input type="reset" class="buttons" name="LIMPAR">
+            
+    </div>
+ 
   </body>
 </html>

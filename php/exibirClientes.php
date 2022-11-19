@@ -64,7 +64,7 @@ include("conexaoBanco.php");
 		    echo "<td>" . $row['estado'] . "</td>";
 		    echo "<td>" . $row['email'] . "</td>";
                     echo "<td>" . $row['cpf'] . "</td>";
-                    echo "<td> <a href='edit_cli.php?cod_cli=". $row['cod_cli'] . "'>Editar</a></form></td>";
+                    echo "<td> <a href='atualizarCliente.php?cod_cli=". $row['cod_cli'] . "'>Editar</a></form></td>";
                     echo "<td> <a href='excluir.php?cod_cli=". $row['cod_cli'] . "'>Excluir </a></td></tr></table>";
                     
                     }

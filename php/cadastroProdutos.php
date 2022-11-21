@@ -4,9 +4,9 @@
 </head>
 <body>
     <p><h1> Cadastro de Produtos </h1></p>
-    <form method="POST" action="cadastrar_produtos.php">
+    <form method="POST" action="./cadastrarProdutos.php">
     <p><label>Nome: <input type="text" name="nome" maxlength="100" required></label> 
-    <p><label>Preço: <input type="number" name="preco" maxlength="5,2" required></label> 
+    <p><label>Preço: <input type="number" name="preco" maxlength="8" step="0.01" min="0" max="9999.99" required></label> 
     <p><label>Unidade Meidida: <input type="text" name="unidade_medida" maxlength="5" required></label> 
     <p><label>Quantidade em Estoque: <input type="number" name="qtd_estoque" maxlength="100" required></label> 
     <p><label>Código da Especiladade: <select name = "cod_categoria"></label>

@@ -2,10 +2,12 @@
     session_start();
     include_once("conexaoBanco.php");
     $id = $_GET['cod_cli'];
-    $query = "SELECT FROM tb_cliente where cod_cli = '$id'";
+    $query = "SELECT FROM tb_cliente where cod_cli = $id";
     $result = mysqli_query($conexao, $query);
     $row = mysqli_fetch_assoc($result);
     $cod_cli = $row['cod_cli'];
+    echo $id;
+    echo $cod_cli;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,7 +24,7 @@
             unset ($_SESSION['msg']);
         }
     ?>
-    <form method="POST" action="">
+    <form method="POST" action="atualizarCliente.php">
         <input type="hidden" name="cod_cli" value="<?php echo $row['cod_cli']; ?>">
 
         <p><label>Nome: </label><input type="text" name="nome" size="100" values="<?php echo $row['nome'];?>">

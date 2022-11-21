@@ -8,6 +8,9 @@
         $estado = $_POST['estado'];
         $email = $_POST['email'];
         $cpf = $_POST['cpf'];
+        $estado = strtoupper($estado);
+
+
         include('conexaoBanco.php');
         
         $query = "INSERT INTO tb_cliente (nome, endereco, telefone, limite_cred, cidade, estado, email, cpf) VALUES ('$nome', '$endereco', '$telefone', '$limite_cred', '$cidade', '$estado', '$email', '$cpf')";

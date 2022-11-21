@@ -11,7 +11,7 @@
     <p><label>Quantidade em Estoque: <input type="number" name="qtd_estoque" maxlength="100" required></label> 
     <p><label>Código da Especiladade: <select name = "cod_categoria"></label>
         <?php
-          include("conexaoBanco.php");
+          include('conexaoBanco.php');
           $query = 'SELECT *FROM tb_categoria ORDER BY descricao;';
           $resu = mysqli_query($conexao, $query) or die(mysqli_connect_error());
           while ($reg = mysqli_fetch_array($resu)) {

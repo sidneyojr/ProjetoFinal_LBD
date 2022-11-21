@@ -58,7 +58,7 @@ include("conexaoBanco.php");
                     echo "<td>" . $row['estado'] . "</td>";
                     echo "<td>" . $row['telefone'] . "</td>";
                     echo "<td>" . $row['porc_comissao'] . "</td>";
-                    echo "<td> <a href='./atualizarCliente.php?cod_vendedor=". $row['cod_vendedor'] . "'>Editar</a></form></td>";
+                    echo "<td> <a href='./atualizarVendedor.php?cod_vendedor=". $row['cod_vendedor'] . "'>Editar</a></form></td>";
                     echo "<td> <a href='./excluirVendedor.php?cod_vendedor=". $row['cod_vendedor'] . "'>Excluir </a></td></tr></table>";
                     
                     }

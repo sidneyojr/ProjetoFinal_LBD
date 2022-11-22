@@ -26,11 +26,11 @@
     <form method="POST" action="./editar_vend.php">
         <input type="hidden" name="cod_vendedor" value="<?php echo $row['cod_vendedor']; ?>">
 
-        <p><label>Nome: </label><input type="text" name="nome" size="100" values="<?php echo $row['nome'];?>">
-        <p><label>Endereço: </label><input type="text" name="endereco" size="200" values="<?php echo $row['endereco'];?>">
+        <p><label>Nome: </label><input type="text" name="nome" size="100" value="<?php echo $row['nome'];?>">
+        <p><label>Endereço: </label><input type="text" name="endereco" size="200" value="<?php echo $row['endereco'];?>">
         
         
-        <p><label>Cidade: </label><input type="text" name="cidade" size="100" values="<?php echo $row['cidade'];?>">
+        <p><label>Cidade: </label><input type="text" name="cidade" size="100" value="<?php echo $row['cidade'];?>">
         <p><label>Estado: </label><select name="estado">
 				    <option value="SP"> SP </option>
 				    <option value="BA"> BA </option>
@@ -38,12 +38,10 @@
 				    <option value="MG"> MG </option>
 				    <option value="PR"> PR </option>
 				   </select>
-        <p><label>Telefone: </label><input type="text" name="telefone" size="15" values="<?php echo $row['telefone'];?>">
+        <p><label>Telefone: </label><input type="text" name="telefone" size="15" value="<?php echo $row['telefone'];?>">
         
-        <p><label>Porcentagem de Comissão: </label><input type="number" step="0.05" min="0" max="0.3" name="porcentagemComissao" values="<?php echo $row['porc_comissao'];?>">
-    <?php
-        mysqli_close($conexao);
-    ?>
+        <p><label>Porcentagem de Comissão: </label><input type="number" step="0.05" min="0" max="0.3" name="porcentagemComissao" value="<?php echo $row['porc_comissao'];?>">
+
     <input type="submit" value="Salvar">
     </form>
     </body>

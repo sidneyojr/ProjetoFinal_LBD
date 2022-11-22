@@ -16,30 +16,30 @@
         <meta charset="utf-8">
    </head>
 <body>
-    <h1> Alteraçaão de dados do Cliente </h1>
+    <h1> Alteração de dados do Cliente </h1>
     <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset ($_SESSION['msg']);
         }
     ?>
-    <form method="POST" action="">
+    <form method="POST" action="editar_cli.php">
         <input type="hidden" name="cod_cli" value="<?php echo $row['cod_cli']; ?>">
 
-        <p><label>Nome: </label><input type="text" name="nome" size="100" values="<?php echo $row['nome'];?>">
-        <p><label>Endereço: </label><input type="text" name="endereco" size="200" values="<?php echo $row['endereco'];?>">
-        <p><label>Telefone: </label><input type="text" name="telefone" size="15" values="<?php echo $row['telefone'];?>">
-        <p><label>Limite de Crédito: </label><input type="number" name="limite_cred" size="10,2" values="<?php echo $row['limite_cred'];?>">
-        <p><label>Cidade: </label><input type="text" name="cidade" size="100" values="<?php echo $row['cidade'];?>">
+        <p><label>Nome: </label><input type="text" name="nome" size="100" value="<?php echo $row['nome'];?>">
+        <p><label>Endereço: </label><input type="text" name="endereco" size="200" value="<?php echo $row['endereco'];?>">
+        <p><label>Telefone: </label><input type="text" name="telefone" size="15" value="<?php echo $row['telefone'];?>">
+        <p><label>Limite de Crédito: </label><input type="number" name="limite_cred" size="10,2" value="<?php echo $row['limite_cred'];?>">
+        <p><label>Cidade: </label><input type="text" name="cidade" size="100" value="<?php echo $row['cidade'];?>">
         <p><label>Estado: </label><select name="estado">
 				    <option value="SP"> SP </option>
-				    <option value="BA"> RJ </option>
-				    <option value="RJ"> MG </option>
-				    <option value="MG"> ES </option>
-				    <option value="PR"> BA </option>
+				    <option value="BA"> BA </option>
+				    <option value="RJ"> RJ </option>
+				    <option value="MG"> MG </option>
+				    <option value="PR"> PR </option>
 				   </select>
-        <p><label>Email: </label><input type="text" name="email" size="100" values="<?php echo $row['email'];?>">
-        <p><label>CPF: </label><input type="text" name="cpf" size="100" values="<?php echo $row['cpf'];?>">
+        <p><label>Email: </label><input type="text" name="email" size="100" value="<?php echo $row['email'];?>">
+        <p><label>CPF: </label><input type="text" name="cpf" size="100" value="<?php echo $row['cpf'];?>">
     <?php
         mysqli_close($conexao);
     ?>

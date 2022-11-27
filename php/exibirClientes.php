@@ -39,7 +39,7 @@ include("conexaoBanco.php");
                 
             }
             }elseif($nome){
-  	    	$query = "SELECT * FROM tb_cliente where nome = '$nome'";
+  	    	$query = "SELECT * FROM tb_cliente where nome LIKE '$nome%'";
                 $result = mysqli_query($conexao, $query);
                 while($row = mysqli_fetch_assoc($result)){
                     

@@ -6,6 +6,7 @@
     $cod_categoria = $_POST['cod_categoria'];
     include('conexaoBanco.php');
     echo "teste";
+    echo "$nome";
 
     $query = "INSERT INTO tb_produtos (nome, preco, unidade_medida, qtde_estoque, cod_categoria) VALUES ('$nome', '$preco', '$unidade_medida', '$qtde_estoque', '$cod_categoria')";
     $resu = mysqli_query($conexao,$query);

@@ -14,7 +14,7 @@ $cpf = $_POST['cpf'];
 
 $query = "UPDATE tb_cliente SET nome='$nome', endereco='$endereco', telefone='$telefone', limite_cred='$limit_cred', cidade='$cidade', estado='$estado', cpf = '$cpf' WHERE cod_cli = '$cod_cli'";
 
-#$result = "UPDATE tb_cliente SET nome='joao', endereco='fim do mundo', telefone='8879456', limite_cred='10000.00', cidade='nova', estado='MG', cpf = '09427535854' WHERE cod_cli = 2";
+#$result = "UPDATE tb_cliente SET nome='joao', endereco='fim do mundo', telefone='8879456', limite_cred='10000.00', cidade='nova', estado='MG', cpf = '09427535854' WHERE cod_cli = 1";
 
 //erro pra
 $resultado = mysqli_query($conexao, $query) or die(mysqli_connect_error());

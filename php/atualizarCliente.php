@@ -6,7 +6,7 @@
     $result = mysqli_query($conexao, $query);
     $row = mysqli_fetch_assoc($result);
     $cod_cli = $row['cod_cli'];
-    echo $cod_cli;
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -23,7 +23,7 @@
             unset ($_SESSION['msg']);
         }
     ?>
-    <form method="POST" action="editar_cli.php">
+    <form method="POST" action="editarCliente.php">
         <input type="hidden" name="cod_cli" value="<?php echo $row['cod_cli']; ?>">
 
         <p><label>Nome: </label><input type="text" name="nome" size="100" value="<?php echo $row['nome'];?>">

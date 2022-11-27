@@ -23,7 +23,7 @@
             unset ($_SESSION['msg']);
         }
     ?>
-    <form method="POST" action="./editar_vend.php">
+    <form method="POST" action="./editarVendedor.php">
         <input type="hidden" name="cod_vendedor" value="<?php echo $row['cod_vendedor']; ?>">
 
         <p><label>Nome: </label><input type="text" name="nome" size="100" value="<?php echo $row['nome'];?>">
@@ -40,9 +40,9 @@
 				   </select>
         <p><label>Telefone: </label><input type="text" name="telefone" size="15" value="<?php echo $row['telefone'];?>">
         
-        <p><label>Porcentagem de Comissão: </label><input type="number" step="0.05" min="0" max="0.3" name="porcentagemComissao" value="<?php echo $row['porc_comissao'];?>">
+        <p><label>Porcentagem de Comissão: </label><input type="number" step="0.05" min="0" max="0.3" name="porc_Comissao" value="<?php echo $row['porc_comissao'];?>">
 
-    <input type="submit" value="Salvar">
+    <input type="submit" value="Salvar" onclick="">
     </form>
     </body>
 </html>

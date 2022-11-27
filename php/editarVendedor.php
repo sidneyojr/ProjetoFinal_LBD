@@ -1,20 +1,19 @@
 <?php
 session_start();
-
+include("conexaoBanco.php");
 $cod_vendedor = $_POST['cod_vendedor'];
-echo $cod_vendedor;
 $nome=$_POST['nome'];
 $endereco =$_POST['endereco'];
 $cidade =$_POST['cidade'];
 $estado = $_POST['estado'];
 $estado = strtoupper($estado);
 $telefone = $_POST['telefone'];
-$porc_comissao = $_POST['porc_comissao'];
-include('conexaoBanco.php');
+$porc_comissao = $_POST['porc_Comissao'];
+
 
 #$query = "UPDATE tb_vendedor SET nome = '$nome', endereco ='$endereco', cidade ='$cidade', estado ='$estado', telefone ='$telefone', porc_comissao ='$porc_comissao' WHERE cod_vendedor ='$cod_vendedor'";
 
-$query = "UPDATE tb_vendedor SET nome = 'Sidney', endereco ='novoAgora', cidade ='Ilha', estado ='MG', telefone ='558974', porc_comissao ='0.25' WHERE cod_vendedor ='6'";
+$query = "UPDATE tb_vendedor SET nome = '$nome', endereco ='$endereco', cidade ='$cidade', estado ='$estado', telefone ='$telefone', porc_comissao =$porc_comissao WHERE cod_vendedor ='$cod_vendedor'";
 
 
 //erro pra

@@ -40,7 +40,7 @@
 				   </select>
         <p><label>Telefone: </label><input type="text" name="telefone" size="15" value="<?php echo $row['telefone'];?>">
         
-        <p><label>Porcentagem de Comissão: </label><input type="number" step="0.05" min="0" max="0.3" name="porc_Comissao" value="<?php echo $row['porc_comissao'];?>">
+        <p><label>Porcentagem de Comissão: </label><input type="number" step="0.05" min="0" max="0.3" name="porc_comissao" value="<?php echo $row['porc_comissao'];?>">
 
     <input type="submit" value="Salvar" onclick="">
     </form>

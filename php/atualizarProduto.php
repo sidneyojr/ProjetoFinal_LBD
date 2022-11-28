@@ -27,7 +27,7 @@
         <input type="hidden" name="cod_prod" value="<?php echo $row['cod_prod']; ?>">
 
         <p><label>Nome: </label><input type="text" name="nome" size="100" value="<?php echo $row['nome'];?>">
-        <p><label>Preço: </label><input type="number" name="preco" size="200" value="<?php echo $row['preco'];?>">
+        <p><label>Preço: </label><input type="number" name="preco" size="13" value="<?php echo $row['preco'];?>">
         <p><label>Unidade de Medida: </label><input type="text" name="unidade_medida" size="10" value="<?php echo $row['unidade_medida'];?>">
         <p><label>Quantidade no estoque: </label><input type="number" name="qtde_estoque" size="11" step = "1" min="0" max = "1000"  value="<?php echo $row['qtde_estoque'];?>">
         <p><label>Categoria do Produto: <select name="cod_categoria"></label>
@@ -45,7 +45,7 @@
 
       <?php
         }
-        mysqli_close($conexao);
+        #mysqli_close($conexao);
 
 
           ?>

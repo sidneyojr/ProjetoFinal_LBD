@@ -39,11 +39,7 @@ include("conexaoBanco.php");
                 
             }
             }elseif($nome){
-<<<<<<< HEAD
-  	    	$query = "SELECT * FROM tb_cliente where nome = '$nome'";
-=======
   	    	$query = "SELECT * FROM tb_cliente where nome LIKE '$nome%'";
->>>>>>> feature-css
                 $result = mysqli_query($conexao, $query);
                 while($row = mysqli_fetch_assoc($result)){
                     
@@ -76,14 +72,3 @@ include("conexaoBanco.php");
 
 		mysqli_close($conexao);
 ?>  
-
-
-
-
-
-
-
-
-
-
-

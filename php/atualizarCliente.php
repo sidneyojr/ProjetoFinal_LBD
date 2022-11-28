@@ -29,7 +29,7 @@
         <p><label>Nome: </label><input type="text" name="nome" size="100" maxlength="100" value="<?php echo $row['nome'];?>">
         <p><label>Endereço: </label><input type="text" name="endereco" size="200" maxlength="200" value="<?php echo $row['endereco'];?>">
         <p><label>Telefone: </label><input type="text" name="telefone" size="15" maxlength="15"value="<?php echo $row['telefone'];?>">
-        <p><label>Limite de Crédito: </label><input type="number" name="limite_cred" maxlength="8" value="<?php echo $row['limite_cred'];?>">
+        <p><label>Limite de Crédito: </label><input type="number" name="limite_cred" maxlength="8" step ="200" min ="1000" max ="10000"  value="<?php echo $row['limite_cred'];?>">
         <p><label>Cidade: </label><input type="text" name="cidade" size="100" maxlength="60" value="<?php echo $row['cidade'];?>">
         <p><label>Estado: </label><select name="estado">
 				    <option value="SP"> SP </option>
